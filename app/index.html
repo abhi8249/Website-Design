@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .image{
+            display:flex;
+            justify-content: center;   
+            padding-top: 5px;         
+        }
+        .nav{
+            background: black;
+            height: 23px;
+            padding: 14px;
+            border: solid;
+            
+        }
+        ul {
+            list-style-type: none;
+            
+            }
+            li {
+            display: inline;
+            padding: 10px 15px;
+            color:white;
+            
+            }
+            li:hover{
+                color: red;
+                cursor: pointer;
+            }
+            a:hover{
+                color:red;
+                cursor: pointer;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                
+            }
+            .dropdown{
+                text-decoration: none;
+                background-color: black;
+                color: white;
+                border: none;
+            }
+           
+          .grid-container {
+          display: grid;
+        row-gap: 50px;
+         }
+         .item1 {
+       grid-column-start: 1;
+      grid-column-end: 3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="https://www.flipkart.com/">Home</a></li>
+            <li>Contact</li>
+            <li>Carrer</li>
+            <li>Mail Id</li>
+            <li> <select name="Carrer" id="" class="dropdown">
+                <option value="" class="dropdown">Carrer</option>
+                <option value="" class="dropdown">SWE</option>
+                <option value="" class="dropdown">BPO</option>
+            
+                <option value="">HR</option>
+            </select></li>
+        </ul>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+      </div>
+    <div class="image">
+    <img src="../assets/abhi1.jpg" alt="image" height="450px" width="450px">
+    </div>
+</body>
+</html>
