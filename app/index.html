@@ -51,16 +51,20 @@
                 color: white;
                 border: none;
             }
-           
-          .grid-container {
-          display: grid;
-        row-gap: 50px;
-         }
-         .item1 {
-       grid-column-start: 1;
-      grid-column-end: 3;
-}
-
+           .row{
+            display: grid;
+            grid-template-columns: 50% 50%;
+           }
+           .row .column1{
+            background-color: red;
+            
+            
+           }
+           .row .column2{
+            background-color: green;
+            
+           }
+   
     </style>
 </head>
 <body>
@@ -79,19 +83,15 @@
             </select></li>
         </ul>
     </div>
-    <div class="grid-container">
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
-        <div class="grid-item">7</div>
-        <div class="grid-item">8</div>
-        <div class="grid-item">9</div>
-      </div>
-    <div class="image">
-    <img src="../assets/abhi1.jpg" alt="image" height="450px" width="450px">
+   
+   <div class="row">
+    <div class="col-6 column1">
+        <h1>This is head</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ipsam soluta eveniet ratione ex iusto sunt iure doloribus aliquam voluptate!</p>
     </div>
+    <div class="col-6 column2">
+        <img src="../assets/abhi1.jpg" alt="" width="100%" height="100%">
+    </div>
+   </div>
 </body>
 </html>
